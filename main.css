@@ -1,0 +1,352 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;       
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;    
+}
+
+header, footer {
+    background-color: #555;
+    padding-top: 16px;
+    color: #fff;
+    background-image: url(https://img.freepik.com/fotos-gratis/cores-vibrantes-fluem-em-padrao-de-onda-abstrato-gerado-por-ia_188544-9781.jpg?size=626&ext=jpg&ga=GA1.1.1448711260.1706486400&semt=ais);
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: background-color 0.3s ease;    
+}
+
+header > .container, 
+footer > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 16px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.container-flex {
+    display: flex;    
+}
+
+#sobre-a-loja img {
+    max-width: 400px;
+    margin-right: 24px;    
+}
+
+section {
+    padding: 48px 0;
+}
+
+section h2 {
+    margin-bottom: 16px;
+    font-style: italic;
+    border-bottom: 2px solid #555;
+    border-radius: 2px;
+    background-image: linear-gradient(115deg,#2eee1d,#ffcc00,#a767e5,#12bcfe,#44ce7b)    
+}
+
+section p {
+    width: auto;
+    text-align: justify;
+    margin-bottom: 8px;    
+}
+
+.lista-tenis {    
+    flex-wrap: wrap; 
+}
+
+.lista-tenis li {
+    display: inline;
+    list-style: none;
+    max-width: 25%;
+    margin-bottom: 24px;       
+    padding: 16px;
+    border-top: 4px solid transparent;
+    position: relative;
+}
+
+.lista-tenis li img {
+    display: inline;
+    max-width: 100%;
+    height: auto;
+    align-items: center;   
+}
+
+.lista-tenis li h3 {
+    margin: 16px 0;
+}
+
+button {
+    display: inline;
+    width: 100%;
+    padding: 8px 0;
+    border: none;    
+    border-color: #000000;    
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 6px;
+    background-image: linear-gradient(115deg,#2eee1d,#ffcc00,#a767e5,#12bcfe,#44ce7b)
+}
+
+.form-campo {
+    margin-bottom: 16px;
+    align-items: center;
+}
+
+.form-campo label {
+    font-weight: bold;
+    display: block;
+}
+
+.form-campo input,
+.form-campo textarea {
+    width: 100%;
+    display: block;
+    padding: 8px;
+}
+
+.form-campo textarea {
+    resize: none;
+    height: 120px;
+}
+
+form {
+    max-width: 360px;    
+}
+
+form button {
+    max-width: 120px;
+}
+
+footer li {
+    list-style: none;
+    margin-left: 16px;    
+}
+
+footer li img {
+    height: 32px;
+}
+
+@media screen and (max-width: 640px) {
+
+    .container-flex {
+        display: inline;
+        align-items: center;
+        max-width: 90%;        
+    }
+
+    #sobre-a-loja img {
+        max-width: 90%;
+        display: flex;  
+        align-items: center;            
+        margin-bottom: 24px;
+        margin-right: 24px;
+        margin-left: 24px;                
+    }    
+
+    section p {
+        max-width: 90%;
+        text-align: justify;
+        margin-bottom: 8px;    
+    }
+
+    .lista-tenis {
+        display: block;
+        text-align: justify;
+        margin-bottom: 32px;  
+        
+    }
+
+    .container {
+        max-width: 90%;            
+    }
+    
+    section h2 {
+        max-width: 90%;
+        margin-right: 24px;
+        
+    }
+
+    section p {
+        max-width: 90%;        
+        text-align: justify;
+        margin-bottom: 8px;
+        margin-left: 24px;    
+    }
+    
+    
+    .lista-tenis a { 
+        display: block;       
+        font-size: 1.5em;
+    }
+    
+    .lista-tenis img {
+        width: 90%;        
+        align-items: center;        
+    }
+
+    .lista-tenis li {
+        display: inline;
+        list-style: none;
+        align-items: center;
+        max-width: 30%;
+        margin-right: 24px;
+        margin-bottom: 24px;
+        margin-left: 24px;       
+        padding: 16px;
+        border-top: 4px solid transparent;
+        position: relative;
+    }
+
+    .lista-tenis li h3 {
+        margin: 16px 0;
+        text-align: center;
+    }
+    
+    button {
+        display: inline-block;
+        max-width: 90%;
+        align-items: center;
+        margin-right: 24px;
+        margin-left: 24px;
+        padding: 12px 0;
+        border: none;    
+        border-color: #000000;    
+        font-size: 14px;
+        font-weight: bold;
+        font-style: italic;
+        cursor: pointer;
+        border-radius: 6px;
+        background-image: linear-gradient(115deg,#2eee1d,#ffcc00,#a767e5,#12bcfe,#44ce7b)
+    }
+
+    .form-campo {
+        margin-bottom: 16px;
+        align-items: center;
+    }
+
+    header div.container {
+        flex-direction: column;
+    }
+    
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+
+    .container-flex {
+        display: block;
+        align-items: center;
+        max-width: 90%;
+    }
+
+    header h1 {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    #sobre-a-loja img {        
+        max-width: 90%;
+        display: flex;  
+        align-items: center;            
+        margin-bottom: 24px;
+        margin-right: 24px;
+        margin-left: 24px;                  
+    }
+    
+    section p {
+        width: auto;
+        text-align: justify;
+        margin-bottom: 8px;    
+    }
+
+    .lista-tenis {
+        grid-template-columns: repeat(2, 49%);        
+        display: block;
+        text-align: justify;
+        margin-bottom: 24px;        
+    }
+
+    .container {
+        max-width: 90%;        
+    }    
+    
+    .lista-tenis a { 
+        display: block;       
+        font-size: 1.5em;
+    }
+    
+    .lista-tenis img {
+        max-width: 90%;
+        display: block;
+        grid-template-columns: repeat(2, 49%);
+    }
+
+    .lista-tenis li {
+        display: inline-block;
+        justify-content: space-between;
+        list-style: none;
+        max-width: 48%;
+        margin-bottom: 24px;       
+        padding: 24px;
+        border-top: 4px solid transparent;        
+    }
+
+    .lista-tenis li h3 {
+        margin: 16px 0;
+    }
+
+    button {
+        display: inline-block;
+        width: 100%;
+        align-items: center;
+        padding: 12px 0;
+        border: none;    
+        border-color: #000000;    
+        font-size: 14px;
+        font-weight: bold;
+        font-style: italic;
+        cursor: pointer;
+        border-radius: 6px;
+        background-image: linear-gradient(115deg,#2eee1d,#ffcc00,#a767e5,#12bcfe,#44ce7b)
+    }
+
+    header div.container {
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .botao-menu {
+        display: none;
+    }
+}
